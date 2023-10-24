@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class LogicKnowledge {
     public static void main(String[] args) {
         System.out.println("Lottery Number Checker");
@@ -14,6 +15,7 @@ public class LogicKnowledge {
         System.out.println(result);
         numbers.close();
     }
+
     public static int greenTicket(int a, int b, int c) {
         if (a == b && b == c) {
             return 20;
@@ -21,4 +23,7 @@ public class LogicKnowledge {
             return 10;
         } else {
             return 0;
-        }}}
+        }
+        // Had to reformat this (-2)
+    }
+}

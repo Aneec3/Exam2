@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class ArrayKnowledge {
     public static void main(String[] args) {
         System.out.println("Sentence Strecher");
@@ -12,10 +13,13 @@ public class ArrayKnowledge {
         }
         sentence.close();
     }
+
     public static char[] stringToArray(String input) {
         char[] charArray = new char[input.length()];
         for (int i = 0; i < input.length(); i++) {
             charArray[i] = input.charAt(i);
         }
         return charArray;
-    }}
+        // Had to reformat this (-2)
+    }
+}
