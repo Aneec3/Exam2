@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class LogicKnowledge2 {
     public static void main(String[] args) {
         System.out.println("Small Chocolates Calculator");
@@ -14,8 +15,10 @@ public class LogicKnowledge2 {
         System.out.println("Small bars to use:  " + result);
         chocolates.close();
     }
+
+    // This is supposed to be inside the same class as the other logic knowledge method (-2)
     public static int makeChocolate(int small, int large, int goal) {
-        int AllLargeBars = goal/5;
+        int AllLargeBars = goal / 5;
         if (large >= AllLargeBars) {
             goal -= AllLargeBars * 5;
         } else {
@@ -23,6 +26,7 @@ public class LogicKnowledge2 {
         }
         if (goal <= small) {
             return goal;
-        }
-        else return -1;
-    }}
+        } else return -1;
+        // Had to reformat this (-2)
+    }
+}
